@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/list_item"
+    android:padding="16dp"
+    android:minHeight="88dp"
+    android:background="@color/tan_background">
+
+
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/image"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/image"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="bottom"
+            android:text="Lutti"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/miwok_translation" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="One"
+            android:gravity="top"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/default_translation" />
+    </LinearLayout>
+<ImageView
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="16dp"
+    android:src="@drawable/baseline_play_arrow_white_20"/>
+
+
+
+</RelativeLayout>
